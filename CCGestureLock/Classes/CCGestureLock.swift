@@ -8,9 +8,9 @@
 import UIKit
 
 
-public extension UIControlEvents {
+public extension UIControl.Event {
     
-    static var gestureComplete: UIControlEvents { return UIControlEvents(rawValue: 0b0001 << 24) }
+    static var gestureComplete: UIControl.Event { return UIControlEvents(rawValue: 0b0001 << 24) }
 }
 
 
@@ -221,7 +221,7 @@ public class CCGestureLock: UIControl {
             collectionView.selectItem(
                 at: indexPath,
                 animated: true,
-                scrollPosition: UICollectionViewScrollPosition())
+                scrollPosition: UICollectionView.ScrollPosition())
         }
         updateSelectionPath(next, end: end, increment: increment)
     }
