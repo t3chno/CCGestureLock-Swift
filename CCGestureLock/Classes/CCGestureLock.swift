@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIControl.Event {
     
-    static var gestureComplete: UIControl.Event { return UIControlEvents(rawValue: 0b0001 << 24) }
+    static var gestureComplete: UIControl.Event { return UIControl.Event(rawValue: 0b0001 << 24) }
 }
 
 
